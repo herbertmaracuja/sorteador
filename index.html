@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorteador</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <center>
+        <h1>Sorteador 2DEVS</h1>
+
+        <div>
+            <label for="type">Escolha o tipo de sorteio:</label>
+            <select id="type">
+                <option value="numbers">Números</option>
+                <option value="names">Nomes</option>
+            </select>
+        </div>
+
+        <div id="numberFields" class="fields">
+            <label for="minValue">Valor Mínimo:</label>
+            <input type="number" id="minValue" placeholder="Ex: 1" required>
+            <label for="maxValue">Valor Máximo:</label>
+            <input type="number" id="maxValue" placeholder="Ex: 100" required>
+            <label for="quantity">Quantidade de Números:</label>
+            <input type="number" id="quantity" placeholder="Quantos números?" required>
+        </div>
+
+        <div id="nameFields" class="fields" style="display: none;">
+            <label for="names">Nomes (separados por vírgula):</label>
+            <textarea id="names" placeholder="Ex: Casseb, Ale, Girotto, Luciana"></textarea>
+        </div>
+
+        <button id="sortButton">Sortear!</button>
+
+        <h2 id="result"></h2>
+    </center>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
